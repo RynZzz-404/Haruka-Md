@@ -15,26 +15,24 @@ function toCommas(x) {
 exports.allMenu = (ucapanWaktu, pushname, mundur, upload, download, ownerName, botName, jam, tanggal, runtime, isCreator, isPremium, sender, limitCount, limit, gcount, glimit, balance, prefix) => {
     return`${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}
 
-Hitung Mundur HUT RI Ke-77
-${mundur}
 
-*STATISTICS*
- • Upload : ${upload}
- • Downloads : ${download}
+*𝑺𝒕𝒂𝒕𝒊𝒔𝒕𝒊𝒄*
+ • 𝑼𝒑𝒍𝒐𝒂𝒅 : ${upload}
+ • 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅𝒔: ${download}
 
-*BOT INFO*
- • Creator : ${ownerName}
- • Bot Name : ${botName}
- • Time : ${jam}
- • Date : ${tanggal(new Date())}
- • Runtime : ${runtime(process.uptime())}
+*𝑰𝒏𝒇𝒐 𝑩𝒐𝒕*
+ • 𝑪𝒓𝒆𝒂𝒕𝒐𝒓 : ${ownerName}
+ • 𝑩𝒐𝒕 𝑵𝒂𝒎𝒆 : ${botName}
+ • 𝑻𝒊𝒎𝒆 : ${jam}
+ • 𝑫𝒂𝒕𝒆 : ${tanggal(new Date())}
+ • 𝑹𝒖𝒏𝒕𝒊𝒎𝒆 : ${runtime(process.uptime())}
 
-*USER INFO*
- • Name : ${pushname !== undefined ? pushname : '-'}
- • Status : ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
- • Limit : ${isCreator ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
- • Limit Game : ${isCreator ? '-' : cekGLimit(sender, gcount, glimit)}
- • Balance : ${toCommas(getBalance(sender, balance))}
+*𝑼𝒔𝒆𝒓 𝑰𝒏𝒇𝒐*
+ • 𝑵𝒂𝒎𝒆 : ${pushname !== undefined ? pushname : '-'}
+ • 𝑺𝒕𝒂𝒕𝒖𝒔 : ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+ • 𝑳𝒊𝒎𝒊𝒕 : ${isCreator ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+ • 𝑮𝒂𝒎𝒆 𝑳𝒊𝒎𝒊𝒕 : ${isCreator ? '-' : cekGLimit(sender, gcount, glimit)}
+ • 𝑩𝒂𝒍𝒂𝒏𝒄𝒆 : ${toCommas(getBalance(sender, balance))}
 
 *MAIN MENU*${petik}
  • ${prefix}menu
